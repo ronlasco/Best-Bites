@@ -24,11 +24,13 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
+/*step 1: make additional links turn red when mouse hovers*/
 nav ul li:hover:nth-child(1n + 2) a {
   color: white;
   background-color: red;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
+
 /* Header */
 
 .header {
@@ -73,8 +75,10 @@ nav ul li:hover:nth-child(1n + 2) a {
   text-align: right;
 }
 
+/*step 2 */
 .jumbotron h2:first-child {
   margin-top: 120px;
+  color: red;
 }
 
 .jumbotron h2 {
@@ -83,6 +87,10 @@ nav ul li:hover:nth-child(1n + 2) a {
   line-height: 1.1;
 }
 
+/*step 3*/
+.jumbotron h2:last-child {
+  color: orange;
+}
 /* Banner */
 
 .banner {
@@ -104,6 +112,21 @@ nav ul li:hover:nth-child(1n + 2) a {
   font-size: 18px;
   line-height: 1.33;
   color: white;
+}
+/*step 4*/
+.banner a:hover {
+  background-color: red;
+}
+
+/*step 5*/
+.banner a:active {
+  background-color: orange;
+}
+
+/*step 6*/
+.banner .btn {
+  background-color: firebrick;
+  color: darkblue;
 }
 
 /* Contributions */
@@ -145,6 +168,25 @@ nav ul li:hover:nth-child(1n + 2) a {
 .feature ul {
   line-height: 1.4;
 }
+
+/*step 7*/
+.breakfast ul li:nth-child(2n + 3) {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+/*step 8*/
+.dinner ul li:nth-child(4n + 1) {
+  color: green;
+  font-weight: bold;
+}
+
+/*step 9 */
+.dessert ul li:nth-child(3n + 0) {
+  color: orange;
+  font-weight: bold;
+}
+
 
 /* Footer */
 
